@@ -1,0 +1,4 @@
+for
+while  --> Condition true means execute the program
+until  --> Condition false means execute the program
+select

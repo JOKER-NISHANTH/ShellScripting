@@ -1,0 +1,102 @@
+--> keywords
+    if, else ,for, while etc...
+
+--> function
+
+--> comments
+        internal - echo , cd ... and external msfnvenom in metaspolite
+
+--> variables
+
+        ==== Without Space ====
+        user defined
+        system defined , to check type env ==> enveriment variables
+                    Must of in uppercase
+
+            system defined
+                $ is used for calling
+                export to used declear env_variable
+                eg:
+                        export x='nishanth'
+
+                calling the declear env_variable echo $<env_variable>
+                 eg:
+                        echo $x
+                unset to used delete the env_variable
+                eg:
+                        unset x
+            ------------------------------------------------------
+            user defined
+                name='Immortal'
+                echo $name
+
+
+    --> Declare particular type like int , uppercase etc..
+                eg:
+                    delcare -i x=100  --> i = int
+                    echo $x
+
+                    delcare -u n=nishanth --> u = convertToUpperCase
+                    echo $n
+
+                    delcare -l n=NISHANTH --> l - convertToLowerCase
+                    echo $l
+
+                        r is readonly SAME as Constant
+                        delcare -r n=joker
+                        echo $n
+
+                    short_name
+                    alias ip="ipconfig"
+                    then , type ip
+                    if went to check alias history type alias
+
+                    set constant alias
+                        type cat .bashrc
+                        set alias
+
+                    ls -al show the hidien directory
+
+
+    --> Quotes
+            x = NISHANTH
+            "" ===>
+            echo "Hai $x"  ==> Hai NISHANTH
+
+            '' ===> Take Value
+            echo 'Hai $x' ==> Hai $x
+
+            double quotes ,single quote the use yakanuim inu nanacha
+            using escape characters eg: \
+            eg: echo "Hai \$x"
+
+    --> Excute status
+            echo $? --> 0 means True , else Flase
+
+    --> Boolean
+            && Only return True values ==> Both are True
+            eg:
+                ls && pwd  --> True
+                ld && pwd --> False
+
+            || Only return Flase values ==> One True enough
+
+            : First commet is TRUE OR FLASE but Confirm 2nd comment execute
+
+    --> Test comment
+            like if , else
+            Space is must important
+            use []
+
+        eg:
+        [ 10 -gt 5 ] && echo "True" || echo "False" --> True
+        [ 10 -gt 25 ] && echo "True" || echo "False" --> Flase
+                            or
+        test 10 -gt 6 && echo "True" || echo "Flase"
+
+    --> C Bang
+            type : which bash ==> Return bash binary dir ==> /usr/bin/bash
+            #! /usr/bin/bash
+
+            run the file ./<file_name>
+                        Here dot means is current directory

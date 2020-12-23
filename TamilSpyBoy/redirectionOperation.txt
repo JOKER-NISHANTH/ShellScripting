@@ -1,0 +1,15 @@
+
+touch input.txt
+cat > input.txt
+
+cat input.txt --> output the enter the values
+
+>  input
+<  output
+2> Standrad error through
+
+0< input
+1> output
+
+>> Append
+> Override 
